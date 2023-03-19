@@ -1,50 +1,129 @@
-body {
-    font: 20px "Century Gothic", Futura, sans-serif;
-    margin: 200px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 20px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 60px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 60px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*{
+  margin: 0;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: 40px auto;
+}
+
+body{
+  background-color: rgb(20, 18, 24);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+header .logo{
+    color: #ffffff;
+    padding-left: 80px;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Monofett', cursive;
+}
+
+header .presentation{
+    margin: 50px auto;
+    background: url('./img/Blood-and-wine-box-art-1536x916.jpeg');
+    width: 1150px;
+    height: 650px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: rgba(27, 23, 24, 0.178);
+    border-radius: 50px;
+    position: relative;
+}
+
+header ul.nav{
+    padding-right: 90px;
     display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li{
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity 400ms ease;
+}
+
+header ul.nav li:hover{
+    opacity: 0.5;
+}
+
+header .presentation::after{
+    content: 'Лабораторная работа Андрианов и Баймурзаев';
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    width: 400px;
+    font-family: 'Bad Script', cursive;
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+
+footer{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .Game{
+    padding: 20px;
+    width: 20%;
+    margin-bottom: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 500ms ease ;
+    position: relative;
+}
+
+main .Game img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+main .Game:hover{
+    transform: scale(1.07);
+}
+
+main .play{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    background: rgb(188, 34, 34);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color:rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+main h1,
+main p1{
+    width: 200px;
+    margin: 10px 20px;
+    color:rgb(20, 18, 24);
+    font-size: 40px;
+}
+main p1{
+    color: rgb(31, 187, 31);
+    font-size: 20px;
+    font-weight: 600;
+}
