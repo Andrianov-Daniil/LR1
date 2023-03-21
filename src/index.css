@@ -87,7 +87,7 @@ main .Game{
     background: #bfbcbc;
     border-radius: 20px;
     overflow: hidden;
-    transition: transform 500ms ease ;
+    transition: transform 0.5s ease ;
     position: relative;
 }
 
@@ -130,7 +130,7 @@ button{
 button:hover {
     box-shadow: 0 0 10px #2196f3, 0 0 30px #2196f3, 0 0 50px #2196f3;
     background-color: #2196f3;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
     color: #fefefe;
 }
 
@@ -149,8 +149,8 @@ button:hover {
 
 button:hover .button_line--top{
     left: +100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.5s;
+    transition-delay: 0.25s;
 }
 
 .button_line--bottom{
@@ -163,8 +163,8 @@ button:hover .button_line--top{
 
 button:hover .button_line--bottom{
     right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.5s;
+    transition-delay: 0.25s;
 }
 
 .button_line--left{
@@ -177,8 +177,8 @@ button:hover .button_line--bottom{
 
 button:hover .button_line--left{
     bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.5s;
+    transition-delay: 0s;
 }
 
 .button_line--right{
@@ -191,8 +191,8 @@ button:hover .button_line--left{
 
 button:hover .button_line--right{
     top: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.5s;
+    transition-delay: 0s;
 }
 
 main h1,
