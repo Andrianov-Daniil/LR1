@@ -40,7 +40,7 @@ class App extends React.Component{
         },
         {
           id: 6,
-          title: 'Assasin',
+          title: 'Assasins',
           img: '',
           price: '699'
         },
@@ -52,6 +52,24 @@ class App extends React.Component{
         },
         {
           id: 8,
+          title: 'PUBG',
+          img: '',
+          price: '699'
+        },
+        {
+          id: 9,
+          title: 'PUBG',
+          img: '',
+          price: '699'
+        },
+        {
+          id: 9,
+          title: 'PUBG',
+          img: '',
+          price: '699'
+        },
+        {
+          id: 9,
           title: 'PUBG',
           img: '',
           price: '699'
