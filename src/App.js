@@ -9,70 +9,103 @@ class App extends React.Component{
     this.state = {
       games: [
         {
-        id: 1,
-        title: 'Дота 2',
-        img: '',
-        price: '699'
+          id: 1,
+          title: 'Герои 3',
+          url: '',
+          price: '399',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 2,
           title: 'CS GO',
-          img: '',
-          price: '699'
+          url: '',
+          price: '899',
+          discount: true,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 3,
           title: 'Апекс',
-          img: '',
-          price: '699'
+          url: '',
+          price: '200',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 4,
           title: 'Ведьмак',
-          img: '',
-          price: '699'
+          url: '',
+          price: '599',
+          discount: true,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 5,
           title: 'NFS',
-          img: '',
-          price: '699'
+          url: '',
+          price: '1399',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 6,
           title: 'Assasins',
-          img: '',
-          price: '699'
+          url: '',
+          price: '699',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 7,
           title: 'DOOM',
-          img: '',
-          price: '699'
+          url: '',
+          price: '1499',
+          discount: true,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 8,
           title: 'PUBG',
-          img: '',
-          price: '699'
+          url: '',
+          price: '369',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
         },
         {
           id: 9,
-          title: 'PUBG',
-          img: '',
-          price: '699'
+          title: 'Крестики нолики',
+          url: '',
+          price: '699',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: true
         },
         {
-          id: 9,
-          title: 'PUBG',
-          img: '',
-          price: '699'
+          id: 10,
+          title: 'Шашки',
+          url: '',
+          price: '699',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: true
         },
         {
-          id: 9,
-          title: 'PUBG',
-          img: '',
-          price: '699'
+          id: 11,
+          title: 'Морской бой',
+          url: '',
+          price: '699',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: true
         },
       ]
     };

@@ -81,6 +81,7 @@ main{
 }
 
 main .Game{
+    justify-content: space-between;
     padding: 20px;
     width: 20%;
     margin-bottom: 50px;
@@ -89,6 +90,10 @@ main .Game{
     overflow: hidden;
     transition: transform 0.5s ease ;
     position: relative;
+}
+
+.title{
+    font-size: 50px;
 }
 
 main .Game img{
@@ -195,13 +200,32 @@ button:hover .button_line--right{
     transition-delay: 0s;
 }
 
+.I_have_game{
+    padding-bottom: 40px;
+}
+
+.discount{
+    color: rgb(97, 97, 97);
+    font-size: 20px;
+    font-weight: 500;
+}
+
 main h1,
-main p1{
+main p1,
+main li,
+main del{
     padding-bottom: 10px;
     width: 200px;
     margin: 10px 20px;
     color:rgb(20, 18, 24);
     font-size: 30px;
+}
+
+.now_price{
+    color: rgb(31, 187, 31);
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 main p1{
