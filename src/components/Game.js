@@ -6,9 +6,11 @@ export class Game extends Component {
       return (
         //есть игра
         <div className='Game'>
-          <img src={"./game/"+this.props.game.id + ".png"}/>
+          <button5>
+             <img src={"./game/"+this.props.game.id + ".png"}/>
+          </button5>
           <h1 className='I_have_game'>{this.props.game.title}</h1>
-          <a className='play' href='file:///C:/LR/lr1/src/qwe/qwe.html' target={'_blank'}>
+          <a className='play'>
             <span className='a_line a_line--top'></span>
             <span className='a_line a_line--bottom'></span>
             <span className='a_line a_line--right'></span>
@@ -22,7 +24,9 @@ export class Game extends Component {
       //игра со скидкой
       return (
         <div className='Game'>
-          <img src={"./game/"+this.props.game.id + ".png"}/>
+          <button5>
+             <img src={"./game/"+this.props.game.id + ".png"}/>
+          </button5>
           <h1>{this.props.game.title}</h1>
           <del className='discount'>{this.props.game.price} Руб.</del>
           <p className='now_price'>{this.props.game.now_price} Руб.</p>
@@ -40,7 +44,9 @@ export class Game extends Component {
       //игра без скидки
       return (
         <div className='Game'>
-          <img src={"./game/"+this.props.game.id + ".png"}/>
+          <button5>
+             <img src={"./game/"+this.props.game.id + ".png"}/>
+          </button5>
           <h1>{this.props.game.title}</h1>
           <p1>{this.props.game.price} Руб.</p1>
           <a className='play'>

@@ -81,6 +81,15 @@ class App extends React.Component{
           I_have_this_game: false
         },
         {
+          id: 232,
+          title: 'Dota',
+          url: '',
+          price: '399',
+          discount: false,
+          now_price: '343',
+          I_have_this_game: false
+        },
+        {
           id: 9,
           title: 'Крестики нолики',
           url: '',
