@@ -4,49 +4,52 @@ export class Game extends Component {
   render() {
     if(this.props.game.I_have_this_game){
       return (
+        //есть игра
         <div className='Game'>
           <img src={"./game/"+this.props.game.id + ".png"}/>
           <h1 className='I_have_game'>{this.props.game.title}</h1>
-          <button className='play'>
-            <span className='button_line button_line--top'></span>
-            <span className='button_line button_line--bottom'></span>
-            <span className='button_line button_line--right'></span>
-            <span className='button_line button_line--left'></span>
-            ИГРАТЬ
-          </button>
+          <a className='play' href='file:///C:/LR/lr1/src/qwe/qwe.html' target={'_blank'}>
+            <span className='a_line a_line--top'></span>
+            <span className='a_line a_line--bottom'></span>
+            <span className='a_line a_line--right'></span>
+            <span className='a_line a_line--left'></span>
+            <p className='center'>ИГРАТЬ</p>
+          </a>
         </div>
       )
     }
     else if(this.props.game.discount){
+      //игра со скидкой
       return (
         <div className='Game'>
           <img src={"./game/"+this.props.game.id + ".png"}/>
           <h1>{this.props.game.title}</h1>
           <del className='discount'>{this.props.game.price} Руб.</del>
           <p className='now_price'>{this.props.game.now_price} Руб.</p>
-          <button className='play'>
-            <span className='button_line button_line--top'></span>
-            <span className='button_line button_line--bottom'></span>
-            <span className='button_line button_line--right'></span>
-            <span className='button_line button_line--left'></span>
-            ИГРАТЬ
-          </button>
+          <a className='play'>
+            <span className='a_line a_line--top'></span>
+            <span className='a_line a_line--bottom'></span>
+            <span className='a_line a_line--right'></span>
+            <span className='a_line a_line--left'></span>
+            <p className='center'>ИГРАТЬ</p>
+          </a>
         </div>
       )
     }
     else {
+      //игра без скидки
       return (
         <div className='Game'>
           <img src={"./game/"+this.props.game.id + ".png"}/>
           <h1>{this.props.game.title}</h1>
           <p1>{this.props.game.price} Руб.</p1>
-          <button className='play'>
-            <span className='button_line button_line--top'></span>
-            <span className='button_line button_line--bottom'></span>
-            <span className='button_line button_line--right'></span>
-            <span className='button_line button_line--left'></span>
-            ИГРАТЬ
-          </button>
+          <a className='play'>
+            <span className='a_line a_line--top'></span>
+            <span className='a_line a_line--bottom'></span>
+            <span className='a_line a_line--right'></span>
+            <span className='a_line a_line--left'></span>
+            <p className='center'>ИГРАТЬ</p>
+          </a>
         </div>
       )
     }
